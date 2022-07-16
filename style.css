@@ -1,0 +1,47 @@
+body{
+    background-color: powderblue;
+}
+
+.navbar-items{
+    position: absolute;
+    left: 1070px;
+}
+
+.navbar-title{
+    position: relative;
+    left: 10px;
+}
+
+.signup-btn{
+    margin-left: 10px;
+}
+
+.login-btn{
+    margin-left: 45px;
+}
+
+.searchbar{
+    position: relative;
+    margin-left: 350px;
+}
+
+/* Title */
+
+.big-heading{
+    margin-top: 100px;
+    margin-left: 70px;  
+}
+
+.explore-btn{
+    line-height: 1rem;
+    margin-left: 70px;
+}
+
+.book-img{
+    margin-top: 100px;
+    padding: 0px;
+    height: 200px;
+    width: 524px;
+    margin-top: 100px;
+    margin-left: 200px;
+}

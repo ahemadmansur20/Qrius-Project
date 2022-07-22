@@ -1,50 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>QRIUS</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#">QRIUS</a>
-            <!-- <img src="images/favicon.ico" alt="Q"> -->
-          <!-- <a class="navbar-brand text-light navbar-title" href="#">Qrius</a> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="searchbar-nav">
-                <input class="form-control mr-sm-2 searchbar" type="search" placeholder="Search" aria-label="Search">
-                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-            </div>
-            <div class="navbar-nav navbar-items">
-              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-              <a class="nav-link text-light" href="#">Features</a>
-              <a class="nav-link text-light" href="#">Pricing</a>
-              <a class="nav-link text-light" href="#">Membership</a>
-              <button class=" btn btn-light login-btn" href="#">Login</button>
-              <button class=" btn btn-light signup-btn" href="#">SignUp</button>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- local CSS -->
+    <link rel="stylesheet" href="C:\Users\ADMIN\Desktop\Q-rius hackathion\style.css">
+    <!-- Embedded Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>QRIUS</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">QRIUS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-items" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rentals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Membership</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Trending
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <table cellspacing="5">
+                <tr>
+                  <td>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  </td>
+                  <td>
+                    <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Biography</a></li>
+                    </td>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Science Fiction</a></li>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li><a class="dropdown-item" href="#">Mystery</a></li>
+                        </td>
+                        <td>
+                          <li><a class="dropdown-item" href="#">Horror</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li><a class="dropdown-item" href="#">Philosophy</a></li>
+                      </td>
+                      <td>
+                        <li><a class="dropdown-item" href="#">Educational</a></li>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li><a class="dropdown-item" href="#">Articles</a></li>
+                      </td>
+                      <td>
+                        <li><a class="dropdown-item" href="#">Historical Fiction</a></li>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li><a class="dropdown-item" href="#">Mythological</a></li>
+                      </td>
+                      <td>
+                        <li><a class="dropdown-item" href="#">Self Help</a></li>
+                      </td>
+                    </tr>
+                  <tr>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Personal Development</a></li>
+                    </td>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Short Stories</a></li>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Contemporary Literature</a></li>
+                    </td>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Drama</a></li>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Politics</a></li>
+                    </td>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Spirtuality</a></li>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Cooking</a></li>
+                    </td>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Anthology</a></li>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Business</a></li>
+                    </td>
+                    <td>
+                        <li><a class="dropdown-item" href="#">Comedy</a></li>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Travel</a></li>
+                    </td>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Manga</a></li>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Fairytale</a></li>
+                    </td>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Encyclopedia</a></li>
+                    </td> 
+                  </tr>
+                  <tr>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Economics</a></li>
+                    </td>
+                    <td>
+                      <li><a class="dropdown-item" href="#">Classic</a></li>
+                    </td>
+                  </tr>
+              </table>
+            </ul>
+        </ul>
+      </div>
+      <div class="login">
+      <button class="btn btn-outline-light">Login</button>
+      <button class="btn btn-outline-light">Sign-up</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Title -->
+  <section id="title">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <img src="C:\Users\ADMIN\Desktop\Q-rius hackathion\images\Background-img.png" width="2000" height="1200" alt=""
+          srcset="C:\Users\ADMIN\Desktop\Q-rius hackathion\images\Background-img.png 2000w, C:\Users\ADMIN\Desktop\Q-rius hackathion\images\Background-img.png 300w, C:\Users\ADMIN\Desktop\Q-rius hackathion\images\Background-img.png 1024w, C:\Users\ADMIN\Desktop\Q-rius hackathion\images\Background-img.png 768w, C:\Users\ADMIN\Desktop\Q-rius hackathion\images\Background-img.png 1536w"
+          sizes="100vw">
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <h1 class="big-heading">What books are you looking for?</h1>
+        <button type="button" class="btn btn-outline-light btn-lg explore-btn">Explore</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended Books -->
+  <section id="book-carousel">
+    <h1 class="big-heading">Recommended Books</h1>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card" style="width: 18rem;">
+            <img src="C:\Users\ADMIN\Desktop\Q-rius hackathion\images\demo-book.jpg" class="card-img-top" alt="recmd-book">
+            <div class="card-body">
+              <h5 class="card-title">Book Of Night</h5>
+              <p class="card-text">Dark, strange, thick with mystery and twists ― Book of Night is everything delicious and frightening I've come to expect
+              from Holly Black
+              </p>
+              <a href="#" class="btn btn-primary">Borrow Now</a>
             </div>
           </div>
         </div>
-      </nav>
-      <!-- Title -->
-    <section id="title">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <h1 class="big-heading">WHAT BOOKS ARE YOU LOOKING FOR?</h1>
-              <button type="button" class="btn btn-light btn-outline-dark btn-lg explore-btn">Explore</button>
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem;">
+            <img src="C:\Users\ADMIN\Desktop\Q-rius hackathion\images\Tom-gates.jpeg" class="card-img-top" alt="recmd-book">
+            <div class="card-body">
+              <h5 class="card-title">Tom Gates: Excellent Excuses</h5>
+              <p class="card-text">Getting to the top of Mr Fullerman's award chart is proving a bit tricky!
+              </p>
+              <a href="#" class="btn btn-primary">Borrow Now</a>
             </div>
-            <img class="book-img" src="images/demo-book-2.jpeg" alt="book-image">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem;">
+            <img src="C:\Users\ADMIN\Desktop\Q-rius hackathion\images\wimpy-kid.jpeg" class="card-img-top" alt="recmd-book">
+            <div class="card-body">
+              <h5 class="card-title">The Diary of a wimpy Kid: Long Haul</h5>
+              <p class="card-text">This time, the Heffleys are off on a road trip! The chances of survival are... quite small to be honest.
+              </p>
+              <a href="#" class="btn btn-primary">Borrow Now</a>
             </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
-   <script src="index.js"></script>
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>

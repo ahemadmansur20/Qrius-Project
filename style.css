@@ -1,10 +1,11 @@
-body{
-    background-color: powderblue;
+
+.navbar{
+    width: 100%;
+    background-image: linear-gradient(180deg, black, #81CACF);
 }
 
 .navbar-items{
-    position: absolute;
-    left: 1070px;
+    margin-left: 55%;
 }
 
 .navbar-title{
@@ -19,17 +20,14 @@ body{
 .login-btn{
     margin-left: 45px;
 }
-
-.searchbar{
-    position: relative;
-    margin-left: 350px;
-}
-
 /* Title */
 
 .big-heading{
+    font-family: 'Cookie', cursive;
+    font-size: 5rem;
     margin-top: 100px;
     margin-left: 70px;  
+    color: #fff;
 }
 
 .explore-btn{
@@ -37,11 +35,23 @@ body{
     margin-left: 70px;
 }
 
-.book-img{
-    margin-top: 100px;
-    padding: 0px;
-    height: 200px;
-    width: 524px;
-    margin-top: 100px;
-    margin-left: 200px;
+#book-carousel{
+    background-color: aquamarine;
 }
+
+.carousel-item{
+    box-align: center;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+
